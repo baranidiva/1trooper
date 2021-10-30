@@ -1,0 +1,30 @@
+<section id="contact" class="contact">
+    <div class="container">
+
+        <div class="section-title pb-0 pt-5" data-aos="fade-up">
+            <h2 class="mb-0">Log In</h2>
+        </div>
+        <div class="row" id="outer">
+            <!-- <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300"></div> -->
+            <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300" id="inner">
+                <form class="form" [formGroup]="loginForm" (ngSubmit)="onClickSubmit(loginForm.value)" style="width: 75%; margin-top: 10%;margin-left: 15%;">
+                    <div class="form-group">
+                        <input formControlName="username" type="text" name="name" class="form-control field" id="name" placeholder="User ID" required>
+                    </div>
+                    <div class="form-group">
+                        <input formControlName="password" type="password" class="form-control field" name="password" id="password" placeholder="Password"
+                            required>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Log In</button></div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,13 @@
+<main id="main">
+    <section id="about" class="about">
+<div class="container">
+  
+    <div class="gallery">
+    <ng-container *ngFor="let i of galleryImage">
+      <a class="gallery-item"><img src={{i.img}} width="330px" height="265px" alt={{i.img}}><span class="text-wrapper"><span class="name">{{i.description}}</span><span class="title">description</span></span></a>
+    </ng-container>
+    </div>
+    
+  </div>
+  </section>
+  </main>
